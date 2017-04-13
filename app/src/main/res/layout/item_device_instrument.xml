@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <CheckBox
+        android:id="@+id/item_device_instrument_choose_img"
+        android:layout_width="@dimen/x38"
+        android:layout_height="@dimen/x38"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@drawable/btn_check"
+        android:button="@null"
+        android:checked="false" />
+
+
+    <TextView
+        android:id="@+id/item_device_instrument_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x38"
+        android:layout_toRightOf="@+id/item_device_instrument_choose_img"
+        android:gravity="center"
+        android:text="被测设备"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x28" />
+
+
+    <ImageView
+        android:id="@+id/item_device_instrument_check_img"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x52"
+        android:background="@drawable/icon_more" />
+
+    <ImageView
+        android:id="@+id/item_divider_line"
+        android:layout_width="@dimen/x750"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="#dbdbdb" />
+
+</RelativeLayout>

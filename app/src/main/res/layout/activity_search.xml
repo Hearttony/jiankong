@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="客户名称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_device_contact"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="设备名称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_device_name"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="型号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_device_model"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="编号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_device_serial_number"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="测试开始时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_toLeftOf="@+id/iv_date_start"
+                android:text="请选择" />
+
+            <ImageView
+                android:id="@+id/iv_date_start"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y34"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/icon_date_grey" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="测试结束时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_toLeftOf="@+id/iv_date_end"
+                android:text="请选择" />
+
+            <ImageView
+                android:id="@+id/iv_date_end"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y34"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/icon_date_grey" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="测试温度点(℃)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_mean_temperature"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y84">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="测试湿度点(%)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y28" />
+
+            <EditText
+                android:id="@+id/ed_mean_humidity"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_data_edit"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/y28" />
+
+            <ImageView
+                android:layout_width="@dimen/x724"
+                android:layout_height="@dimen/x1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/x690"
+            android:layout_height="@dimen/y80"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_register_register"
+            android:text="查询"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y90"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_instrument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:text="1234567"
+        android:textColor="#529903"
+        android:textSize="@dimen/x28" />
+
+    <ImageView
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/y48"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x220"
+        android:background="#f4f4f4" />
+
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x280"
+        android:text="1234567"
+        android:textColor="#f6a623"
+        android:textSize="@dimen/x28" />
+
+    <ImageView
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/y48"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x470"
+        android:background="#f4f4f4" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x520"
+        android:text="采集中"
+        android:textColor="#666666"
+        android:textSize="@dimen/x28" />
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        android:layout_width="@dimen/x80"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#f9f9f9">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_more" />
+    </RelativeLayout>
+
+</RelativeLayout>

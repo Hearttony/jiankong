@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_yonghudenglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y266">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="用户登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y56" />
+    </RelativeLayout>
+
+    <!--username-->
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="@dimen/x638"
+        android:layout_height="@dimen/y102"
+        android:layout_below="@+id/rl_yonghudenglu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y132"
+        android:background="@drawable/shape_username">
+
+        <ImageView
+            android:id="@+id/iv_username"
+            android:layout_width="@dimen/x46"
+            android:layout_height="@dimen/y56"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:background="@drawable/login_icon_username" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x26"
+            android:layout_toRightOf="@+id/iv_username"
+            android:hint="Username"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gainsboro"
+            android:textSize="@dimen/y28" />
+    </RelativeLayout>
+
+    <!--password-->
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="@dimen/x638"
+        android:layout_height="@dimen/y102"
+        android:layout_below="@+id/rl_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y32"
+        android:background="@drawable/shape_username">
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="@dimen/x46"
+            android:layout_height="@dimen/y56"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:background="@drawable/login_icon_password" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x26"
+            android:layout_toRightOf="@+id/iv_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gainsboro"
+            android:textSize="@dimen/y28" />
+    </RelativeLayout>
+
+    <!--login-->
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="@dimen/x638"
+        android:layout_height="@dimen/y102"
+        android:layout_below="@+id/rl_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y32">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_login_login"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y40" />
+    </RelativeLayout>
+
+    <!--register-->
+    <RelativeLayout
+
+        android:layout_width="@dimen/x638"
+        android:layout_height="@dimen/y102"
+        android:layout_below="@+id/rl_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y54">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_login_register"
+            android:text="注册新用户"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y28" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

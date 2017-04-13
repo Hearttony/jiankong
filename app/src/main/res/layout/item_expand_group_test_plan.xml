@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y84"
+        android:background="#255ba4">
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:background="@drawable/icon_date" />
+
+        <TextView
+            android:id="@+id/tv_tp_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_toRightOf="@+id/iv_date"
+            android:text="2017-01-01"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y84"
+        android:layout_below="@+id/rl_title"
+        android:background="#f7f7f7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="测试仪"
+            android:textColor="#666666"
+            android:textSize="@dimen/x28" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x280"
+            android:text="被测仪"
+            android:textColor="#666666"
+            android:textSize="@dimen/x28" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x520"
+            android:text="状态"
+            android:textColor="#666666"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+</RelativeLayout>

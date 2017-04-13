@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_tested"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="被测试设备"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:id="@+id/iv_more_tested"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/y32"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@drawable/icon_more" />
+
+                <TextView
+                    android:id="@+id/tv_tested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toLeftOf="@+id/iv_more_tested"
+                    android:text="请选择"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_test"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="测试设备"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:id="@+id/iv_more_test"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/y32"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@drawable/icon_more" />
+
+                <TextView
+                    android:id="@+id/tv_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toLeftOf="@+id/iv_more_test"
+                    android:text="请选择"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_standard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="依据技术文件"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:id="@+id/iv_more_standard"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/y32"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@drawable/icon_more" />
+
+                <TextView
+                    android:id="@+id/tv_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toLeftOf="@+id/iv_more_standard"
+                    android:text="请选择"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:background="#f7f7f7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="测试设置"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="环境温度"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_temp"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="环境湿度"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_hum"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="采样周期"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_cycle"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="采样数量"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_num"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="开始时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <TextView
+                    android:id="@+id/tv_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toLeftOf="@+id/iv_date_start"
+                    android:text="请选择" />
+
+                <ImageView
+                    android:id="@+id/iv_date_start"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y34"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/icon_date_grey" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="温度传感器数"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_temp_sensor_number"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="湿度传感器数"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_hum_sensor_number"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="测试温度(℃)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_test_temp"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y84">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="测试湿度(%)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/y28" />
+
+                <EditText
+                    android:id="@+id/ed_test_hum"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_data_edit"
+                    android:hint="请填写"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#9b9b9b"
+                    android:textSize="@dimen/y28" />
+
+                <ImageView
+                    android:layout_width="@dimen/x724"
+                    android:layout_height="@dimen/x1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y200">
+
+                <Button
+                    android:id="@+id/btn_test_plan"
+                    android:layout_width="@dimen/x690"
+                    android:layout_height="@dimen/y80"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_register_register"
+                    android:text="开始采集"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

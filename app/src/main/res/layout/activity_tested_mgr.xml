@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="#f3f1f1">
+
+        <ListView
+            android:id="@+id/lv_tested_devices"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1000"
+            android:layout_marginTop="@dimen/y16"
+            android:listSelector="#00000000" />
+
+        <Button
+            android:id="@+id/btn_add_to_test"
+            android:layout_width="@dimen/x690"
+            android:layout_height="@dimen/y80"
+            android:layout_below="@+id/lv_tested_devices"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@drawable/selector_register_register"
+            android:text="添加到测试"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

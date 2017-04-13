@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="8dip">
+
+    <TextView
+        android:id="@+id/storage_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:gravity="center_vertical"
+        android:text="手机存储"
+        android:textColor="#009688"
+        android:textSize="@dimen/x36" />
+
+    <ImageView
+        android:id="@+id/storage_list_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x40"
+        android:src="@drawable/icon_dialog_radio_off" />
+
+
+</RelativeLayout>

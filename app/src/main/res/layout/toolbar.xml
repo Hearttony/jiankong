@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#053c6e">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32"
+        android:textStyle="bold" />
+
+    <!--当前用户-->
+    <TextView
+        android:id="@+id/toolbar_title_main_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="当前用户："
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!--右侧按钮-->
+    <TextView
+        android:id="@+id/toolbar_right_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:text="安全退出"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/toolbar_right_search"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/y40"
+        android:layout_gravity="right"
+        android:background="@drawable/icon_search"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/x28"
+        android:visibility="gone" />
+
+
+</android.support.v7.widget.Toolbar>

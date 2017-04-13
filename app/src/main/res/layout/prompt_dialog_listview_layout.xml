@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/prompt_dialog_bg_normal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:text="title"
+        android:textColor="#EE000000"
+        android:textSize="20sp" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#d5d5d5"
+        android:dividerHeight="0.1dip"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"></ListView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="20dip">
+
+        <TextView
+            android:id="@+id/button_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/button_ok"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:text="cancle"
+            android:textColor="#808080"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:text="ok"
+            android:textColor="#808080"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
